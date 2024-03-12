@@ -2,7 +2,14 @@
 
 ## **Objective**
 
-The goal of this lab is to learn cybersecurity in the lens of both the blue team and the red team (purple teaming). We will set up a purposefully weak environment via VirtualBox. We will implement a pfSense router for network segmentation and firewall, Security Onion and Splunk as our SIEM + IDS/IPS, an Active Directory environment to simulate an enterprise network, and a Kali Linux machine to simulate an attacker. Once the lab is set up, we can perform various attacks and gradually strengthen the security of the machines and network, giving us exposure and hands-on experience to a wide variety of tools in the process. This repository serves to document each individual step for troubleshooting and future reference.
+The goal of this lab is to learn cybersecurity in the lens of both the blue team and the red team (purple teaming). We will set up a purposefully weak environment via VirtualBox. 
+We will use the following:
+- pfSense router for network segmentation and firewall
+- Security Onion and Splunk for our SIEM + IDS/IPS
+- An Active Directory environment to simulate an enterprise network
+- A Kali Linux machine to simulate an attacker/ pentester
+
+ Once the lab is set up, we can perform various attacks and gradually strengthen the security of the machines and network, giving us exposure and hands-on experience to a wide variety of tools in the process. This repository serves to document each individual step for troubleshooting and future reference.
 
 **Blue Team**
 
@@ -90,9 +97,9 @@ Leave IPv6 disabled for now
 
 ## Chapters
 
-pfSense: Network Segmentation and Firewall 
+### - [pfSense: Network Segmentation and Firewall](pfsense.md)
 
-Security Onion: All-in-One Security Monitoring, Log Management, and IDS System
+### - [Security Onion: All-in-One Security Monitoring, Log Management, and IDS System](securityonion.md)
 
 Ubuntu: Security Onion Management
 
