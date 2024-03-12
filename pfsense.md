@@ -8,7 +8,7 @@ Get the ISO file from: [https://www.pfsense.org/download/](https://www.pfsense.o
 
 Once finished, store the file in a directory dedicated to ISO files (this will make things a lot more convenient)
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled.png)
+<img src = "/images/pfsense/Untitled.png" width = 60% height = 60%>
 
 ## Setting Up pfSense Virtual Machine
 
@@ -28,45 +28,45 @@ For hardware, I put:
 
 Make sure everything is correct and press finish
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%201.png)
+<img src = "/images/pfsense/Untitled 1.png" width = 60% height = 60%>
 
 Launch pfSense (Click on Start on VirtualBox)
 
 Accept
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%202.png)
+<img src = "/images/pfsense/Untitled 2.png" width = 60% height = 60%>
 
 Install pfSense
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%203.png)
+<img src = "/images/pfsense/Untitled 3.png" width = 60% height = 60%>
 
 Use Auto (UFS)
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%204.png)
+<img src = "/images/pfsense/Untitled 4.png" width = 60% height = 60%>
 
 Select Entire Disk
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%205.png)
+<img src = "/images/pfsense/Untitled 5.png" width = 60% height = 60%>
 
 Select MBR (DOS Partition)
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%206.png)
+<img src = "/images/pfsense/Untitled 6.png" width = 60% height = 60%>
 
 Finish
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%207.png)
+<img src = "/images/pfsense/Untitled 7.png" width = 60% height = 60%>
 
 Commit
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%208.png)
+<img src = "/images/pfsense/Untitled 8.png" width = 60% height = 60%>
 
 pfSense will begin installing
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%209.png)
+<img src = "/images/pfsense/Untitled 9.png" width = 60% height = 60%>
 
 When finished**, do not reboot**, just power off the VM
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2010.png)
+<img src = "/images/pfsense/Untitled 10.png" width = 60% height = 60%>
 
 Now right click on pfSense > Settings > Storage and remove the ISO image (Blue button on the right, next to Optical Drive)
 
@@ -74,9 +74,9 @@ The only Storage Device should be the pfSense.vdi file
 
 (Do not skip step: skipping this step resulted in a permanent loop of the pfSense installation process)
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2011.png)
+<img src = "/images/pfsense/Untitled 11.png" width = 60% height = 60%>
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2012.png)
+<img src = "/images/pfsense/Untitled 12.png" width = 60% height = 60%>
 
 Now, we will configure the network adapters according to the topology
 
@@ -84,19 +84,19 @@ Head over to Network
 
 Attach Adapter 1 to the NAT Network we configured earlier. Select SOC Network
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2013.png)
+<img src = "/images/pfsense/Untitled 13.png" width = 60% height = 60%>
 
 Enable Adapter 2 and set it as an Internal Network and name it Vnet2. Repeat for Adapter 3 and 4 accordingly.
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2014.png)
+<img src = "/images/pfsense/Untitled 14.png" width = 60% height = 60%>
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2015.png)
+<img src = "/images/pfsense/Untitled 15.png" width = 60% height = 60%>
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2016.png)
+<img src = "/images/pfsense/Untitled 16.png" width = 60% height = 60%>
 
 Press OK to apply all changes
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2017.png)
+<img src = "/images/pfsense/Untitled 17.png" width = 60% height = 60%>
 
 Now this is where things could get annoying. VirtualBox does not allow you to configure more than 4 Adapters via the GUI, so we have to use the command line for this
 
@@ -104,17 +104,17 @@ Before doing anything though, let’s make it so that we can use VirtualBox comm
 
 Search for **“Edit the system environment variables**” using the Windows search bar
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2018.png)
+<img src = "/images/pfsense/Untitled 18.png" width = 60% height = 60%>
 
 Click on **Environment Variables > Path,** and edit
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2019.png)
+<img src = "/images/pfsense/Untitled 19.png" width = 60% height = 60%>
 
 Select new, select the directory “**C:\Program Files\Oracle\VirtualBox**”
 
 **Note:** (May vary depending on the your installation path of VirtualBox)
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2020.png)
+<img src = "/images/pfsense/Untitled 20.png" width = 60% height = 60%>
 
 Click OK on all tabs to write the changes
 
@@ -128,11 +128,11 @@ In my case, it is C:\Users\Walter\Desktop\VM\Security Operations Center\pfSense
 
 We will create 2 additional network adapters, Vnet5 and Vnet6 on an internal network using the Intel PRO/1000 MT Desktop adapter like the other 4 adapters.
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2021.png)
+<img src = "/images/pfsense/Untitled 21.png" width = 60% height = 60%>
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2022.png)
+<img src = "/images/pfsense/Untitled 22.png" width = 60% height = 60%>
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2023.png)
+<img src = "/images/pfsense/Untitled 23.png" width = 60% height = 60%>
 
 ```cpp
 VBoxManage modifyvm "pfSense" --nic5 intnet
@@ -150,11 +150,11 @@ Now head over to VirtualBox
 
 Notice that Adapters 5 and 6 show up under Network. You will not be able to modify these adapters using the GUI however, only using the command line like before. Only Adapters 1-4 can be modified within VirtualBox (kind of annoying but it’s whatever)
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2024.png)
+<img src = "/images/pfsense/Untitled 24.png" width = 60% height = 60%>
 
 Start pfSense. We should see this now
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2025.png)
+<img src = "/images/pfsense/Untitled 25.png" width = 60% height = 60%>
 
 Done
 
@@ -164,13 +164,13 @@ pfSense got assigned the IP 192.168.0.8 via DHCP
 
 We will need to set up the 5 additional adapters
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2026.png)
+<img src = "/images/pfsense/Untitled 26.png" width = 60% height = 60%>
 
 ### Assigning Interfaces
 
 Press 1
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2027.png)
+<img src = "/images/pfsense/Untitled 27.png" width = 60% height = 60%>
 
 VLANs should not be set up now so press n
 
@@ -188,11 +188,11 @@ Map the interfaces to their respective adapters:
 
 **OPT4**: em5 (Adapter 6)
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2028.png)
+<img src = "/images/pfsense/Untitled 28.png" width = 60% height = 60%>
 
 y to Proceed. Notice all the interfaces appear in pfSense but they still need an IP address assigned
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2029.png)
+<img src = "/images/pfsense/Untitled 29.png" width = 60% height = 60%>
 
 ### Assigning IPs
 
@@ -224,7 +224,7 @@ IPv4 client range: 192.168.1.11-192.168.1.200
 
 Do not revert to HTTP
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2030.png)
+<img src = "/images/pfsense/Untitled 30.png" width = 60% height = 60%>
 
 **OPT1 (Adapter 3)**
 
@@ -248,11 +248,11 @@ No DHCP server for this adapter
 
 Do not revert to HTTP
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2031.png)
+<img src = "/images/pfsense/Untitled 31.png" width = 60% height = 60%>
 
 Adapter 3 is now there
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2032.png)
+<img src = "/images/pfsense/Untitled 32.png" width = 60% height = 60%>
 
 **OPT2 (Adapter 4)**
 
@@ -276,11 +276,11 @@ No DHCP server for this adapter
 
 Do not revert to HTTP
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2033.png)
+<img src = "/images/pfsense/Untitled 33.png" width = 60% height = 60%>
 
 Adapter 4 is now there
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2034.png)
+<img src = "/images/pfsense/Untitled 34.png" width = 60% height = 60%>
 
 **OPT3 (Adapter 5)**
 
@@ -308,10 +308,10 @@ No DHCP server for this adapter
 
 Do not revert to HTTP
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2035.png)
+<img src = "/images/pfsense/Untitled 35.png" width = 60% height = 60%>
 
 We should see all of our adapters with their assigned IPs now
 
-![Untitled](pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032/Untitled%2036.png)
+<img src = "/images/pfsense/Untitled 36.png" width = 60% height = 60%>
 
 We will now continue to the Security Onion setup
