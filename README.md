@@ -2,7 +2,7 @@
 
 ## **Objective**
 
-The goal of this lab is to learn cybersecurity in the lens of both the blue team and the red team (purple teaming). We will set up a purposefully weak environment via VirtualBox. Once the lab is set up, we can perform various attacks and gradually strengthen the security of the machines and network, giving us exposure and hands-on experience to a wide variety of tools in the process. This repository serves to document each individual step for troubleshooting and future reference.
+The goal of this lab is to learn cybersecurity in the lens of both the blue team and the red team (purple teaming). We will set up a purposefully weak environment via VirtualBox. We will implement a pfSense router for network segmentation and firewall, Security Onion and Splunk as our SIEM + IDS/IPS, an Active Directory environment to simulate an enterprise network, and a Kali Linux machine to simulate an attacker. Once the lab is set up, we can perform various attacks and gradually strengthen the security of the machines and network, giving us exposure and hands-on experience to a wide variety of tools in the process. This repository serves to document each individual step for troubleshooting and future reference.
 
 **Blue Team**
 
@@ -10,7 +10,7 @@ We will use Ubuntu, Security Onion and Splunk to see alerts and logs created by 
 
 **Red Team**
 
-We will use Kali Linux to perform attacks on the network, particularly the Active Directory environment. The goal is to find all possible attack vectors, vulnerabilities and use exploits to see what data we can collect and what damage we can cause. Additionally, we will try our best to evade detection from the blue team and bypass rules.
+We will use Kali Linux to perform attacks on the network, particularly the Active Directory environment. The goal is to find all possible attack vectors, vulnerabilities and use exploits to see what data we can collect and what damage we can cause. Additionally, we will try our best to bypass rules and evade detection from the blue team.
 
 </br>
 
@@ -90,23 +90,23 @@ Leave IPv6 disabled for now
 
 ## Chapters
 
-[pfSense: Network Segmentation and Firewall](SOC%20920d37ca2fe44379a9c51eebbfc97047/pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032.md)
+pfSense: Network Segmentation and Firewall 
 
-[Security Onion: All-in-One Security Monitoring, Log Management, and IDS System](SOC%20920d37ca2fe44379a9c51eebbfc97047/Security%20Onion%20All-in-One%20Security%20Monitoring,%20Log%20f675c2a3a508456c8aecb5655e17a5f7.md)
+Security Onion: All-in-One Security Monitoring, Log Management, and IDS System
 
-[Ubuntu: Security Onion Management](SOC%20920d37ca2fe44379a9c51eebbfc97047/Ubuntu%20Security%20Onion%20Management%2085b9f6496cea49e7a93312019d626acd.md)
+Ubuntu: Security Onion Management
 
-[Kali Linux: Attack Box](SOC%20920d37ca2fe44379a9c51eebbfc97047/Kali%20Linux%20Attack%20Box%207a30005ad983440f8ab8cd6cc7c13e30.md)
+Kali Linux: Attack Box
 
-[pfSense: Configuring Interfaces and Rules](SOC%20920d37ca2fe44379a9c51eebbfc97047/pfSense%20Configuring%20Interfaces%20and%20Rules%205bb7d11fa79f482598ee96b582a45d2b.md)
+pfSense: Configuring Interfaces and Rules
 
-[Active Directory: Domain Controller Setup](SOC%20920d37ca2fe44379a9c51eebbfc97047/Active%20Directory%20Domain%20Controller%20Setup%2043f1ccba8fdb4ec6a0c6694324cbe0c0.md)
+Active Directory: Domain Controller Setup
 
-[Active Directory: Windows 10 Client Setup](SOC%20920d37ca2fe44379a9c51eebbfc97047/Active%20Directory%20Windows%2010%20Client%20Setup%2058fbf006a77742da83e68c3f6ea32235.md)
+Active Directory: Windows 10 Client Setup
 
-[Splunk Setup on Ubuntu Server](SOC%20920d37ca2fe44379a9c51eebbfc97047/Splunk%20Setup%20on%20Ubuntu%20Server%201cf095f706ee42a89fa228cc0bf2cfa7.md)
+Splunk Setup on Ubuntu Server
 
-[Forwarding AD Logs to Splunk](SOC%20920d37ca2fe44379a9c51eebbfc97047/Forwarding%20AD%20Logs%20to%20Splunk%201ece17d5415c4ff4bf0b86e94e205bd6.md)
+Forwarding AD Logs to Splunk
 
 
 ## Completion 
