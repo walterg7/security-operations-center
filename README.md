@@ -2,7 +2,7 @@
 
 ## **Objective**
 
-The goal of this lab is to learn cybersecurity in the lens of both the blue team and the red team (purple teaming). We will set up a purposefully weak environment via VirtualBox. 
+The goal of this lab is to learn cybersecurity in the lens of both the blue team and the red team (purple teaming). We will set up a purposefully weak environment via Oracle VM VirtualBox. 
 We will use the following:
 - pfSense router for network segmentation and firewall
 - Security Onion and Splunk for our SIEM + IDS/IPS
@@ -125,7 +125,7 @@ Keep in mind that we set the worst security configurations possible, so there’
 
 For starters, we can just do a simple nmap scan and see what ports and services are open on the DC. From there, we can use something like Metasploit to begin attacking the AD network. 
 
-(It is also recommended to have a dual monitor setup)
+(It is also recommended to have a dual monitor setup to have the best experience for this lab)
 
 <img src = "/images/Untitled6.png" width = 100% height = 100%>
 
@@ -142,3 +142,5 @@ Run sudo so-status upon boot
 Run again after a few minutes to see if the services are running
 
 <img src = "/images/Untitled 5.png" width = 60% height = 60%>
+
+3. You might want to save a snapshot of every VM before doing anything, just in case you completely break something. A snapshot will restore the machine to a previous state.
