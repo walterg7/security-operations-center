@@ -125,7 +125,9 @@ Keep in mind that we set the worst security configurations possible, so there’
 
 For starters, we can just do a simple nmap scan and see what ports and services are open on the DC. From there, we can use something like Metasploit to begin attacking the AD network. 
 
-<img src = "/images/Untitled 6.png" width = 60% height = 60%>
+(It is also recommended to have a dual monitor setup)
+
+<img src = "/images/Untitled6.png" width = 100% height = 100%>
 
 ## Additional Notes
 
