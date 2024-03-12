@@ -159,5 +159,3 @@ I was unable to ping Security Onion (192.168.3.10) from the Ubuntu VM. I added t
 Pinging and connecting to 192.168.3.0/24 should now work
 
 <img src = "/images/ubuntu/Untitled 26.png" width = 60% height = 60%>
-
-<img src = "/images/ubuntu/Untitled 27.png" width = 60% height = 60%>
