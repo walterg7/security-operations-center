@@ -71,7 +71,7 @@ The performance was exceptionally good, I had no problems.
 
 </br>
 
-## Set Up
+## Setup
 
 I am running this lab on Oracle VM VirtualBox.
 
@@ -101,20 +101,21 @@ Leave IPv6 disabled for now
 
 ### - [Security Onion: All-in-One Security Monitoring, Log Management, and IDS System](securityonion.md)
 
-Ubuntu: Security Onion Management
+### - [Ubuntu: Security Onion Management](ubuntu.md)
 
-Kali Linux: Attack Box
+### - [Kali Linux: Attack Box](kalilinux.md)
 
-pfSense: Configuring Interfaces and Rules
+### - [pfSense: Configuring Interfaces and Rules](pfsense-rules.md)
 
-Active Directory: Domain Controller Setup
+### - [Active Directory: Domain Controller Setup](ad-domaincontroller.md)
 
-Active Directory: Windows 10 Client Setup
+### - [Active Directory: Windows 10 Client Setup](ad-win10client.md)
 
-Splunk Setup on Ubuntu Server
+### - [Splunk Setup on Ubuntu Server](splunk.md)
 
-Forwarding AD Logs to Splunk
+### - [Forwarding AD Logs to Splunk](universal-forwarder.md)
 
+</br>
 
 ## Completion 
 
