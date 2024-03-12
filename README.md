@@ -1,20 +1,22 @@
-# Security Operations Center & Pentesting Home Lab
+# Security Operations Center & Pentesting Home Lab (Set Up)
 
 ## **Objective**
 
-The goal of this lab is to learn cybersecurity in the lens of both the blue team and the red team (purple teaming). We will set up a purposefully weak environment via VirtualBox. Once the lab is set up, we can perform various attacks and gradually strengthen the security of the machines and network, giving us exposure and hands-on experience to a wide variety of tools in the process.
-
-**Red Team**
-
-We will use Kali Linux to perform attacks on the network, particularly the Active Directory environment. The goal is to find all possible attack vectors, vulnerabilities and use exploits to see what data we can collect and what damage we can cause. 
+The goal of this lab is to learn cybersecurity in the lens of both the blue team and the red team (purple teaming). We will set up a purposefully weak environment via VirtualBox. Once the lab is set up, we can perform various attacks and gradually strengthen the security of the machines and network, giving us exposure and hands-on experience to a wide variety of tools in the process. This repository serves to document each individual step for troubleshooting and future reference.
 
 **Blue Team**
 
-On the other hand, we will use Ubuntu, Security Onion and Splunk to see alerts and logs created by the attacks and AD. The goal is to strengthen the security posture of the entire network, practice efficient log aggregation and implement stronger firewall and IDS/IPS rules.
+We will use Ubuntu, Security Onion and Splunk to see alerts and logs created by the attacks and Active Directory. The goal is to strengthen the security posture of the entire network, practice efficient log aggregation and implement stronger firewall and IDS/IPS rules.
+
+**Red Team**
+
+We will use Kali Linux to perform attacks on the network, particularly the Active Directory environment. The goal is to find all possible attack vectors, vulnerabilities and use exploits to see what data we can collect and what damage we can cause. Additionally, we will try our best to evade detection from the blue team and bypass rules.
+
+</br>
 
 ## **Topology**
 
-![Untitled](SOC%20920d37ca2fe44379a9c51eebbfc97047/Untitled.png)
+<img src = "/images/Untitled.png" width = 100% height = 100%>
 
 **NAT Network (192.168.0.xxx)**
 
@@ -40,11 +42,15 @@ This adapter is dedicated to mirror traffic from the victim network to the SOC f
 
 This will connect Splunk/ Ubuntu Server to pfSense. Splunk receives logs from the victim network via universal forwarder. 
 
-### System Recommendations
+</br>
 
-A home lab like this where multiple virtual machines will be saved, deployed and running will require your host PC to have a very strong CPU and sufficient RAM and storage. 
+## Hardware
+
+A home lab like this where multiple virtual machines will be saved, deployed and running will require the host PC to have a very strong CPU and sufficient RAM and storage. 
 
 **Note**: It might have been a better idea to run this lab on the cloud, but I wanted to have full control over the environment and learn how to set things up on my own. I plan on building a similar lab on the cloud for the future.
+
+</br>
 
 For reference, the build I used during this lab was:
 
@@ -56,7 +62,9 @@ For reference, the build I used during this lab was:
 
 The performance was exceptionally good, I had no problems.
 
-## First Steps
+</br>
+
+## Set Up
 
 I am running this lab on Oracle VM VirtualBox.
 
@@ -64,7 +72,7 @@ Before starting, we need to create a NAT Network within our virtualized environm
 
 Navigate to File > Tools > Network Manager
 
-![Untitled](SOC%20920d37ca2fe44379a9c51eebbfc97047/Untitled%201.png)
+<img src = "/images/Untitled 1.png" width = 60% height = 60%>
 
 Select the NAT Networks tab and Press Create
 
@@ -76,7 +84,11 @@ Enable DHCP
 
 Leave IPv6 disabled for now
 
-![Untitled](SOC%20920d37ca2fe44379a9c51eebbfc97047/Untitled%202.png)
+<img src = "/images/Untitled 2.png" width = 60% height = 60%>
+
+</br>
+
+## Chapters
 
 [pfSense: Network Segmentation and Firewall](SOC%20920d37ca2fe44379a9c51eebbfc97047/pfSense%20Network%20Segmentation%20and%20Firewall%209bd49df1ea2e4ab7ab54e4e59d36f032.md)
 
@@ -96,7 +108,8 @@ Leave IPv6 disabled for now
 
 [Forwarding AD Logs to Splunk](SOC%20920d37ca2fe44379a9c51eebbfc97047/Forwarding%20AD%20Logs%20to%20Splunk%201ece17d5415c4ff4bf0b86e94e205bd6.md)
 
-K
+
+## Completion 
 
 Our lab is finally setup, and we can begin attacking and collecting logs.
 
@@ -104,18 +117,18 @@ Keep in mind that we set the worst security configurations possible, so there’
 
 For starters, we can just do a simple nmap scan and see what ports and services are open on the DC. From there, we can use something like Metasploit to begin attacking the AD network. 
 
-![Untitled](SOC%20920d37ca2fe44379a9c51eebbfc97047/Untitled%203.png)
+<img src = "/images/Untitled 3.png" width = 60% height = 60%>
 
-Additional notes:
+## Additional Notes
 
-pfSense must be running at all times when this lab is being used.
+1. pfSense must be running at all times when this lab is being used.
 
-When launching Security Onion, you may have to wait around 10 minutes for all the services to be running (important for log collection)
+2. When launching Security Onion, you may have to wait around 10 minutes for all the services to be running (important for log collection)
 
 Run sudo so-status upon boot
 
-![Untitled](SOC%20920d37ca2fe44379a9c51eebbfc97047/Untitled%204.png)
+<img src = "/images/Untitled 4.png" width = 60% height = 60%>
 
 Run again after a few minutes to see if the services are running
 
-![Untitled](SOC%20920d37ca2fe44379a9c51eebbfc97047/Untitled%205.png)
+<img src = "/images/Untitled 5.png" width = 60% height = 60%>
